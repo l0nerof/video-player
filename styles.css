@@ -1,0 +1,12 @@
+body {
+  margin: 50px auto;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.plyr__video-embed iframe {
+  pointer-events: none;
+}
