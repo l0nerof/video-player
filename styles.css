@@ -7,6 +7,6 @@ body {
   margin: 0 auto;
 }
 
-.plyr__video-embed iframe {
-  pointer-events: none;
+.vjs-tech {
+  pointer-events: none !important;
 }

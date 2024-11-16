@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video-player</title>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="plyr__video-embed" id="player">
-        <iframe
-          src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-          allowfullscreen
-          allowtransparency
-          allow="autoplay"
-        ></iframe>
-      </div>
-    </div>
 
-    <script src="/index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video-player</title>
+  <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+  <video id="vid1" class="video-js vjs-default-skin" controls autoplay width="640" height="264" data-setup='{
+    "techOrder": ["youtube"],
+    "sources": [{
+      "src": "https://www.youtube.com/watch?v=g5ERY3VtaUU",
+      "type": "video/youtube"
+    }],
+    "youtube": {
+      "modestbranding": 1, 
+      "rel": 0, 
+      "showinfo": 0, 
+      "playsinline": 1,
+      "iv_load_policy": 3, 
+      "disablekb": 1
+    },
+    "controls": true,
+    "autoplay": false,
+    "playsinline": true,
+    "controlBar": { 
+      "volumePanel": { "inline": false } 
+    }
+  }'>
+  </video>
+
+  <script src="/index.js"></script>
+  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js"></script>
+</body>
+
 </html>
