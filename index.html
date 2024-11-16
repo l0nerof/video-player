@@ -12,9 +12,27 @@
 <body>
 
 
-  <video id="vid1" class="video-js vjs-default-skin" controls preload="auto" playsInline webkit-playsInline autoplay
-    width="640" height="264" playsinline webkit-playsinline data-setup='{}'>
-    <source src="https://www.youtube.com/watch?v=g5ERY3VtaUU" type="video/youtube">
+  <video id="vid1" class="video-js vjs-default-skin" controls playsInline autoplay width="640" height="264" playsinline
+    webkit-playsinline data-setup='{
+    "techOrder": ["youtube"],
+    "sources": [{
+      "src": "https://www.youtube.com/watch?v=g5ERY3VtaUU",
+      "type": "video/youtube"
+    }],
+    "youtube": {
+      "modestbranding": 1, 
+      "rel": 0, 
+      "showinfo": 0, 
+      "playsinline": 1,
+      "iv_load_policy": 3, 
+      "disablekb": 1
+    },
+    "controls": true,
+    "autoplay": false,
+    "controlBar": { 
+      "volumePanel": { "inline": false } 
+    }
+  }'>
   </video>
 
   <script src="/index.js"></script>
