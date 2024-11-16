@@ -2,11 +2,6 @@ body {
   margin: 50px auto;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 .vjs-youtube .vjs-iframe-blocker {
   display: block !important;
 }
