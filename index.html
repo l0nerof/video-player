@@ -5,38 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video-player</title>
-  <link href="https://unpkg.com/video.js@7.0/dist/video-js.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
 
-  <video id="vid1" class="video-js vjs-default-skin" controls preload="auto" playsInline autoplay width="640"
-    height="264" playsinline webkit-playsinline data-setup='{
-    "techOrder": ["youtube"],
-    "sources": [{
-      "src": "https://www.youtube.com/watch?v=g5ERY3VtaUU",
-      "type": "video/youtube"
-    }],
-    "youtube": {
-      "modestbranding": 1, 
-      "rel": 0, 
-      "showinfo": 0, 
-      "playsinline": 1,
-      "iv_load_policy": 3, 
-      "disablekb": 1
-    },
-    "controls": true,
-    "autoplay": false,
-    "controlBar": { 
-      "volumePanel": { "inline": false } 
-    }
-  }'>
+  <video id="vid1" class="video-js vjs-default-skin" controls preload="auto" playsInline webkit-playsInline autoplay
+    width="640" height="264" playsinline webkit-playsinline data-setup='{}'>
+    <source src="https://www.youtube.com/watch?v=g5ERY3VtaUU" type="video/youtube">
   </video>
 
   <script src="/index.js"></script>
-  <script src="https://unpkg.com/video.js@7.0/dist/video.js"></script>
+  <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/videojs-youtube/dist/Youtube.min.js"></script>
 </body>
 
