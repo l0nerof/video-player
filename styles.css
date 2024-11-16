@@ -7,14 +7,6 @@ body {
   margin: 0 auto;
 }
 
-.vjs-youtube iframe {
-  pointer-events: none;
-}
-
-.vjs-tech:hover {
-  pointer-events: auto;
-}
-
-.vjs-youtube iframe:hover {
-  cursor: none;
+.vjs-youtube .vjs-iframe-blocker {
+  display: block !important;
 }
