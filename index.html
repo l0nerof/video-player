@@ -12,7 +12,8 @@
 <body>
 
 
-  <video id="vid1" class="video-js vjs-default-skin" controls autoplay width="640" height="264" data-setup='{
+  <video id="vid1" class="video-js vjs-default-skin" controls autoplay width="640" height="264" playsinline
+    webkit-playsinline data-setup='{
     "techOrder": ["youtube"],
     "sources": [{
       "src": "https://www.youtube.com/watch?v=g5ERY3VtaUU",
@@ -28,7 +29,6 @@
     },
     "controls": true,
     "autoplay": false,
-    "playsinline": true,
     "controlBar": { 
       "volumePanel": { "inline": false } 
     }

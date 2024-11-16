@@ -9,4 +9,5 @@ body {
 
 .vjs-youtube .vjs-iframe-blocker {
   display: block !important;
+  pointer-events: none;
 }
