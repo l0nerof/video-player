@@ -9,22 +9,20 @@ body {
 
 .vjs-youtube .vjs-iframe-blocker {
   display: block !important;
-  pointer-events: none !important;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .video-js {
     width: 100% !important;
     height: auto !important;
   }
 
-  /* Для екранного режиму (fullscreen) */
   .vjs-fullscreen {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999; /* Забезпечує повноекранний ефект */
+    z-index: 9999;
   }
-}
+} */
