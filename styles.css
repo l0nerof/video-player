@@ -50,3 +50,10 @@ body {
   top: -50%;
   height: 200%;
 }
+
+@media all and not (display-mode: fullscreen) {
+  .plyr iframe[id^="youtube"] {
+    top: -50%;
+    height: 200%;
+  }
+}
