@@ -6,22 +6,47 @@ body {
   pointer-events: none;
 } */
 
-.plyr__video-wrapper:after {
-  border: 1px solid #00000026;
-  border-bottom-color: #00000040;
-  border-radius: inherit;
-  bottom: 0;
-  content: "";
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 3;
-}
-
-.plyr audio,
+/* .plyr audio,
 .plyr iframe,
 .plyr video {
   pointer-events: none;
+} */
+
+/* .plyr iframe[id^="youtube"] {
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.plyr.plyr--paused iframe[id^="youtube"] {
+  opacity: 0;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+
+.plyr iframe {
+  transition: 1s filter;
+  filter: opacity(1);
+}
+
+.plyr.plyr--paused iframe {
+  filter: opacity(0);
+  transition: 0.2s filter;
+}
+
+.plyr--paused .plyr__poster {
+  z-index: 2;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+} */
+
+.plyr iframe[id^="youtube"] {
+  top: -50%;
+  height: 200%;
 }
