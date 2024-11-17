@@ -5,3 +5,9 @@ body {
 /* .plyr__video-embed iframe {
   pointer-events: none;
 } */
+
+.plyr audio,
+.plyr iframe,
+.plyr video {
+  pointer-events: none;
+}
