@@ -16,3 +16,11 @@ const player = new Plyr("#player", {
   },
 });
 window.player = player;
+
+if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+  document
+    .querySelector(".plyr__video-embed")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+}
