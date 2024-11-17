@@ -1,5 +1,4 @@
 const player = new Plyr("#player", {
-  fullscreen: { iosNative: true },
   youtube: {
     // sdk: null,
     // api: null,
